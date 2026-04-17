@@ -7,7 +7,9 @@ const web = express()
 const port = 3000
 
 
-
+web.get('/',(req,res)=>{
+    return res.json("your request has reached")
+})
 
 
 
