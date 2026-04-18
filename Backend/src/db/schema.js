@@ -6,3 +6,5 @@ export const userTable = pgTable("users",{
     password: text('password').notNull(),
     salt: text('salt').notNull(),// this salt wil help us to keep password safe
 })
+
+export default userTable
