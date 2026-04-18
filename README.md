@@ -32,7 +32,7 @@ The primary goal of this project is to demonstrate:
 ### Frontend
 - HTML  
 - CSS  
-- JavaScript (Vanilla JS)  
+- JavaScript
 
 ### Backend
 - Node.js (Express.js)  
