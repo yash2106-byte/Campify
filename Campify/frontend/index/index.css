@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* --- NAVBAR --- */
+nav {
+  background-color: #1a7a4a;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav .signin-btn {
+  background-color: transparent;
+  color: white;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+nav .signin-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav .signup-btn {
+  background-color: white;
+  color: #1a7a4a;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav .signup-btn:hover {
+  background-color: #e0ffe0;
+}
+
+/* --- HERO --- */
+.hero {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.hero h1 span {
+  color: #1a7a4a;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .hero-btn {
+  background-color: #1a7a4a;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero .hero-btn:hover {
+  background-color: #155e38;
+}
+
+.hero .outline-btn {
+  background-color: white;
+  color: #1a7a4a;
+  padding: 12px 28px;
+  border: 2px solid #1a7a4a;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hero .outline-btn:hover {
+  background-color: #e6f4ec;
+}
+
+/* --- TRUST BAR --- */
+.trust-bar {
+  background-color: #1a7a4a;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* --- FEATURES --- */
+.features {
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.features .subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  width: 280px;
+}
+
+.feature-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* --- FAQ --- */
+.faq-section {
+  background-color: white;
+  padding: 50px 30px;
+  border-top: 2px solid #ddd;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.faq-item .faq-question {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item .faq-question:hover {
+  color: #1a7a4a;
+}
+
+.faq-item .faq-answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials {
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+}
+
+.testimonial-card .stars {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.testimonial-card .role {
+  font-size: 12px;
+  color: #888;
+}
+
+/* --- CTA BANNER --- */
+.cta-banner {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-banner h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.cta-banner p {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.cta-banner .cta-btn {
+  background-color: #1a7a4a;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-banner .cta-btn:hover {
+  background-color: #155e38;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+footer .footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a7a4a;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+footer ul li a {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer ul li a:hover {
+  color: #1a7a4a;
+}
+
+footer .copyright {
+  font-size: 13px;
+  color: #aaa;
+}

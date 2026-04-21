@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campify - Project Management</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="/Campify/frontend/index/index.html" class="logo">⛺ Campify</a>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <div>
+        <a href="/Campify/frontend/Signin/SignIn.html" class="signin-btn"
+          >Sign In</a
+        >
+        <a href="/Campify/frontend/SignUp/SignUp.html" class="signup-btn"
+          >Sign Up Free</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>
+        Stop wrestling with projects.<br />Start <span>finishing</span> them.
+      </h1>
+      <p>
+        Campify puts your tasks, chats, files, and team in one simple place. No
+        chaos. No confusion.
+      </p>
+      <a href="/Campify/frontend/SignUp/SignUp.html" class="hero-btn"
+        >Start for Free</a
+      >
+      <a href="#features" class="outline-btn">See How It Works</a>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+      Trusted by <strong>75,000+ organizations</strong> in 166 countries.
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <h2>Everything your team needs</h2>
+      <p class="subtitle">
+        Six simple tools that replace a whole stack of apps.
+      </p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">✅</div>
+          <h3>To-dos</h3>
+          <p>
+            Create tasks, assign them to teammates, set due dates, and track
+            progress easily.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💬</div>
+          <h3>Message Board</h3>
+          <p>
+            Post updates and decisions. Keep all project discussions in one
+            searchable place.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📅</div>
+          <h3>Schedule</h3>
+          <p>
+            Set milestones and deadlines. Everyone sees what's coming up at a
+            glance.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📁</div>
+          <h3>Docs & Files</h3>
+          <p>
+            Upload and share files inside projects. No more digging through
+            email attachments.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔥</div>
+          <h3>Campfire Chat</h3>
+          <p>
+            Real-time chat organized by project so conversations don't get mixed
+            up.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>Card Table</h3>
+          <p>
+            A Kanban-style board to visualize your workflow. Drag cards as work
+            progresses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How long has Campify been around?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            Campify launched in 2004 — over 21 years ago. We have been
+            profitable for 25 straight years with zero debt, privately held and
+            built to last.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Do I still need Slack or Asana?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            Nope. Campify has chat (replaces Slack), task management (replaces
+            Asana), file storage (replaces Dropbox), and docs (replaces Notion).
+            One tool for everything.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Is my data safe?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            Yes. Data is stored in multiple data centers and backed up several
+            times per day. Historical uptime is over 99.99%. You can also export
+            all your data anytime.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Can clients be added to projects?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            Yes! You control exactly what clients can see. They can collaborate
+            without accessing your internal discussions or unfinished work.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="reviews">
+      <h2>What people are saying</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Campify changed how our agency works. Simple, powerful, and our
+            clients love it."
+          </p>
+          <div class="author">Sarah M.</div>
+          <div class="role">Creative Director</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "We replaced Slack, Asana, and Dropbox with Campify. Our team is
+            calmer and ships faster."
+          </p>
+          <div class="author">James T.</div>
+          <div class="role">CTO, SaaS Startup</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "I've tried everything. Campify is the only tool that actually
+            stuck. Honest software."
+          </p>
+          <div class="author">Priya K.</div>
+          <div class="role">Freelance Consultant</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <h2>Ready to get organized?</h2>
+      <p>Try Campify free for 30 days. No credit card required.</p>
+      <a href="/Campify/frontend/Signin/SignIn.html" class="cta-btn"
+        >Start Your Free Trial</a
+      >
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">⛺ Campify</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <div class="copyright">© 2024 Campify LLC</div>
+    </footer>
+  </body>
+</html>

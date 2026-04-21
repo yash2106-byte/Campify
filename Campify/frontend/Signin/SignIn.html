@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Campify</title>
+
+    <link rel="stylesheet" href="SignIn.css" />
+    <script src="Signin.js"></script>
+  </head>
+
+  <body>
+    <!-- ======== NAVBAR ======== -->
+    <nav>
+      <a href="/Campify/frontend/index/index.html" class="logo">⛺ Campify</a>
+      <a href="/Campify/frontend/index/index.html" class="nav-back"
+        >← Back to Home</a
+      >
+    </nav>
+
+    <!-- ======== CENTERED CARD ======== -->
+    <div class="page-wrapper">
+      <div class="signin-card">
+        <div class="card-logo">⛺</div>
+        <div class="card-title">Welcome back!</div>
+        <div class="card-subtitle">Sign in to your Campify account</div>
+
+        <!-- Demo credentials hint -->
+        <div class="demo-hint">
+          🔑 Demo login:<br />
+          Email: <strong>demo@campify.com</strong><br />
+          Password: <strong>password123</strong>
+        </div>
+
+        <!-- Error banner (shown on wrong credentials) -->
+        <div class="error-banner" id="errorBanner">
+          Incorrect email or password. Please try again.
+        </div>
+
+        <!-- ======== SIGN IN FORM ======== -->
+        <div id="signinForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+            <div class="field-error" id="emailError">
+              Please enter your email.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Your password" />
+            <div class="field-error" id="passwordError">
+              Please enter your password.
+            </div>
+          </div>
+
+          <a href="#" class="forgot-link">Forgot your password?</a>
+
+          <button class="submit-btn" onclick="handleSignin()">Sign In →</button>
+
+          <div class="divider">— or —</div>
+
+          <p class="bottom-text">
+            Don't have an account?
+            <a href="/Campify/frontend/index/index.html">Go back to home</a>
+          </p>
+        </div>
+        <!-- end #signinForm -->
+
+        <!-- ======== SUCCESS BOX (hidden until login works) ======== -->
+        <div class="success-box" id="successBox">
+          <div class="success-icon">🎉</div>
+          <h3>You're signed in!</h3>
+          <p>Welcome back to Campify. Your projects are waiting.</p>
+          <a href="/Campify/frontend/index/index.html" class="go-home"
+            >Go to Home →</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Campify</title>
+
+    <link rel="stylesheet" href="SignUp.css" />
+
+    <script src="SignUp.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="/Campify/frontend/index/index.html" class="logo">⛺ Campify</a>
+      <a href="/Campify/frontend/Signin/SignIn.html" class="signin-link"
+        >Already have an account? Sign in →</a
+      >
+    </nav>
+
+    <div class="page-wrapper">
+      <!-- LEFT PANEL -->
+      <div class="left-panel">
+        <h2>Get your whole team organized — free for 30 days.</h2>
+        <p>
+          No credit card needed. Cancel anytime. Set up takes less than 2
+          minutes.
+        </p>
+
+        <ul class="perks-list">
+          <li><span class="check">✓</span> Unlimited projects & teammates</li>
+          <li>
+            <span class="check">✓</span> To-dos, chats, files & schedules in one
+            place
+          </li>
+          <li>
+            <span class="check">✓</span> Client access with privacy controls
+          </li>
+          <li><span class="check">✓</span> Works on web, iOS & Android</li>
+          <li><span class="check">✓</span> 24/7 support included</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="right-panel">
+        <h2>Create your account</h2>
+        <p class="subtext">
+          Already have an account? <a href="signin.html">Sign in</a>
+        </p>
+
+        <!-- SIGNUP FORM -->
+        <div id="signupForm">
+          <div class="name-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Roshan" />
+              <div class="error-msg" id="firstNameError">
+                Please enter your first name.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Sahu" />
+              <div class="error-msg" id="lastNameError">
+                Please enter your last name.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+            <div class="error-msg" id="emailError">
+              Please enter a valid email address.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Min. 6 characters"
+              oninput="checkPasswordStrength()"
+            />
+            <div class="strength-bar">
+              <div class="fill" id="strengthFill"></div>
+            </div>
+            <div class="strength-text" id="strengthText">Enter a password</div>
+            <div class="error-msg" id="passwordError">
+              Password must be at least 6 characters.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Re-enter your password"
+            />
+            <div class="error-msg" id="confirmError">
+              Passwords do not match.
+            </div>
+          </div>
+
+          <button class="submit-btn" onclick="handleSignup()">
+            Create My Account →
+          </button>
+
+          <p class="terms-text">
+            By signing up you agree to our <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+
+        <!-- SUCCESS MESSAGE (shown after form submit) -->
+        <div class="success-box" id="successBox">
+          <div class="big-check">🎉</div>
+          <h3>Welcome to Campify!</h3>
+          <p>
+            Your account has been created. Check your email to verify and get
+            started.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
