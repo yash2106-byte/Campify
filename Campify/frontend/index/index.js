@@ -1,3 +1,8 @@
+// Auth Check: If no token is found, redirect to Signup page
+if (!localStorage.getItem("token")) {
+  window.location.href = "/SignUp/SignUp.html";
+}
+
 function toggleFAQ(clickedQuestion) {
   var answer = clickedQuestion.nextElementSibling;
   var sign = clickedQuestion.querySelector("span");

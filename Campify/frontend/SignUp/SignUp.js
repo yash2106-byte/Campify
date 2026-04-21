@@ -1,3 +1,8 @@
+// Auth Check: If already logged in, go to home page
+if (localStorage.getItem("token")) {
+  window.location.href = "/index/index.html";
+}
+
 // ── Password strength checker ──
 function checkPasswordStrength() {
   var password = document.getElementById("password").value;
@@ -74,7 +79,34 @@ function handleSignup() {
 
   // If everything is valid → show success
   if (isValid === true) {
-    document.getElementById("signupForm").style.display = "none";
-    document.getElementById("successBox").style.display = "block";
+    const fullName = firstName + " " + lastName;
+    const backendData = {
+      formdata: {
+        Username: fullName,
+        Gmail: email,
+        Password: password
+      }
+    };
+
+    fetch("http://localhost:3000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(backendData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        return response.json().then(errData => { throw new Error(errData.error || errData.Error || "Signup failed"); });
+      }
+      return response.json();
+    })
+    .then(data => {
+      alert("Signup successful! Please log in with your new account.");
+      window.location.href = "/Signin/SignIn.html";
+    })
+    .catch(err => {
+      alert("Error: " + err.message);
+    });
   }
 }

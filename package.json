@@ -1,0 +1,10 @@
+{
+  "name": "iwt-fullstack",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"docker-compose up\" \"npm run dev --prefix Backend\" \"npx http-server ./Campify/frontend -p 8080\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
