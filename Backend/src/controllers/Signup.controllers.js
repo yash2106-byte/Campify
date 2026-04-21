@@ -8,6 +8,7 @@ export const PostSignup = async function(req,res) {
     try{
         // get all the data from the request body
         const { formdata } = req.body
+        console.log(formdata)
         // check if the Gmail and username is present in the request body
         if (!formdata.Gmail || !formdata.Username)
         {
@@ -25,7 +26,7 @@ export const PostSignup = async function(req,res) {
             const salt = randomBytes(256).toString('hex')
                 const hashedpassword = createHmac('sha256', salt).update(formdata.Password).digest('hex')
                 await db.insert(userTable).values({
-                    name: formdata.Name,
+                    name: formdata.Username,
                     email: formdata.Gmail,
                     password: hashedpassword,
                     salt: salt

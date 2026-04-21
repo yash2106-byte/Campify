@@ -5,12 +5,16 @@ import { createHmac } from 'crypto'; // to hash the password
 import jwt from 'jsonwebtoken' // to generate web tokens
 
 export const postLogin = async function (req,res) {
-    const {Gmail,Password} = req.body;
+    const {Gmail,Password} = req.body.formdata;
+    console.log(Gmail,Password)
 
     try {
         // if the user has not given any of this
-        if (!Gmail|| !Password){
-            return res.status(400).json({"Error": "Gmail or Password is not defined"})
+        if (!Gmail){
+            return res.status(400).json({"Error":"gmail is not defined"})
+        }
+        if (!Password){
+            return res.status(400).json({"Error": "password is not defined"})
         }
         // this will serach for the user in the database if it doesnot exist then it will return
         const result = await db.select()
